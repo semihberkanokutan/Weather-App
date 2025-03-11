@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: Montserrat, sans-serif;
+}
+
+#root {
+  max-width: 1200px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /*position: relative;*/
+}
+
+@media (min-width: 1025px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  #root {
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  #root {
+    overflow-x: hidden;
+  }
+}
+
